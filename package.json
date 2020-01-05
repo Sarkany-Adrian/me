@@ -1,17 +1,28 @@
 {
-  "name": "dianas",
+  "name": "recruiter-portfolio",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
-  },
+  "description": "Recruiter portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "eslint-plugin-prettier": "3.1.1",
+    "flow-bin": "0.112.0",
+    "prettier": "1.19.1",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "6.7.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.16.0"
   },
   "eslintConfig": {
     "extends": "react-app"

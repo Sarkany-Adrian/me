@@ -1,0 +1,13 @@
+{
+  "singleQuote": true,
+  "bracketSpacing": false,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.{variables,overrides}",
+      "options": {
+        "parser": "less"
+      }
+    }
+  ]
+}
