@@ -1,3 +1,5 @@
 {
-  "pre-commit": "npm run flow && npm run test"
+    "hooks": {
+      "pre-commit": "npm run test && npm run flow"
+    }
 }
