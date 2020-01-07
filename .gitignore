@@ -4,17 +4,35 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
 # Dependency directories
 node_modules
+
 # Test generated
 /screenshots/
 /videos/
 /--screenshots-on-fails/
+
 # Environment variables
 .env
+
 # Webstorm Project
 .idea
+
 # VSCode Project
 .vscode
+
 # Ignore Mac image directories
 .DS_Store
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Coverage directory
+coverage
+
+# Build
+build
