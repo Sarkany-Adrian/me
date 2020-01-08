@@ -1,17 +1,16 @@
 import React from 'react';
 import {mount} from 'enzyme';
-
-import Footer from '../index';
+import Home from '../index';
 
 /**
  *
  */
-describe('footer component: ', () => {
+describe('about page: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<Footer />);
+    const wrapper = mount(<Home />);
 
     expect(wrapper).toHaveLength(1);
 
