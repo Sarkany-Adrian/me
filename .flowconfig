@@ -8,7 +8,10 @@ flow-typed
 [options]
 esproposal.decorators=ignore
 module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=./src
 module.file_ext=.js
+module.file_ext=.less
+module.file_ext=.scss
 module.ignore_non_literal_requires=true
 server.max_workers=1
 
