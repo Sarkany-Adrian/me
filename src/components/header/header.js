@@ -1,8 +1,15 @@
 // @flow
 import React from 'react';
 
+import './header.scss';
+
+/**
+ *
+ * @returns {*}
+ * @constructor
+ */
 const Header = () => {
-  return <header>header</header>;
+  return <header className="header">header</header>;
 };
 
 export default Header;
