@@ -1,6 +1,10 @@
 // @flow
 import React from 'react';
 
+import HeroText from '../../atoms/hero-text';
+
+import './home.scss';
+
 /**
  *
  * @returns {*}
@@ -10,7 +14,13 @@ const Home = () => {
   /**
    *
    */
-  return <div>home page</div>;
+  return (
+    <div className="home">
+      <div>
+        <HeroText />
+      </div>
+    </div>
+  );
 };
 
 export default Home;

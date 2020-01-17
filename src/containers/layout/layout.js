@@ -3,7 +3,7 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 
 // components
-import TopHat from './top-hat';
+// import TopHat from './top-hat';
 import Footer from './footer';
 import Navigation from './navigation';
 
@@ -26,12 +26,13 @@ const Layout = ({component: Comp}: TProps) => {
    *
    */
   return (
-    <div className="app-wrapper">
-      <TopHat />
+    <div className="app">
+      {/*<TopHat />*/}
 
       <Navigation />
-
-      <Route component={Comp} />
+      <div className="app__content-wrapper">
+        <Route component={Comp} />
+      </div>
 
       <Footer />
     </div>

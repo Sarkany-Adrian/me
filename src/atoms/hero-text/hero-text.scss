@@ -1,0 +1,15 @@
+@import '../../styles/resources';
+
+.hero-text {
+  @include fontAlegreya;
+
+  h5 {
+    font-size: 16px;
+    font-weight: $lightFontWeight;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: $lightFontWeight;
+  }
+}
