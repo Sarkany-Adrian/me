@@ -1,17 +1,17 @@
 import React from 'react';
 import {mount} from 'enzyme';
 
-import Header from '../index';
+import TopHat from '../index';
 
 /**
  *
  */
-describe('Header component: ', () => {
+describe('navigation component: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<Header />);
+    const wrapper = mount(<TopHat />);
 
     expect(wrapper).toHaveLength(1);
 

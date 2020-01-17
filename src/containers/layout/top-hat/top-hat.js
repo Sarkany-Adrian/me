@@ -9,6 +9,9 @@ import './top-hat.scss';
  * @constructor
  */
 const TopHat = () => {
+  /**
+   *
+   */
   return <div className="top-hat">top hat</div>;
 };
 
