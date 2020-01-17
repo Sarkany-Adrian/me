@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
+import HeroText from '../../atoms/hero-text';
+
 import './home.scss';
 
 /**
@@ -14,7 +16,9 @@ const Home = () => {
    */
   return (
     <div className="home">
-      <div>home page</div>
+      <div>
+        <HeroText />
+      </div>
     </div>
   );
 };

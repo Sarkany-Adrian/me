@@ -2,7 +2,7 @@
 import React from 'react';
 import {items as NAV_ITEMS} from '../../../constants/navigation-items';
 
-import NavigationItem from '../../../atoms/navigation-item';
+import NavigationItem from './navigation-item';
 
 import './navigation.scss';
 

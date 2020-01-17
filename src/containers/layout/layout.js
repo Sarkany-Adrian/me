@@ -3,7 +3,7 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 
 // components
-import TopHat from './top-hat';
+// import TopHat from './top-hat';
 import Footer from './footer';
 import Navigation from './navigation';
 
