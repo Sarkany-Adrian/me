@@ -3,9 +3,9 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 
 // components
-import TopHat from '../../components/top-hat';
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import TopHat from './top-hat';
+import Footer from './footer';
+import Navigation from './navigation';
 
 import './layout.scss';
 
@@ -22,11 +22,14 @@ type TProps = {
  * @constructor
  */
 const Layout = ({component: Comp}: TProps) => {
+  /**
+   *
+   */
   return (
     <div className="app-wrapper">
       <TopHat />
 
-      <Header />
+      <Navigation />
 
       <Route component={Comp} />
 

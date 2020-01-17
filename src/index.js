@@ -2,8 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch} from 'react-router-dom';
-//
-import './index.css';
+
 // pages
 import Home from './pages/home';
 import About from './pages/about';
