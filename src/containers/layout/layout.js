@@ -26,12 +26,13 @@ const Layout = ({component: Comp}: TProps) => {
    *
    */
   return (
-    <div className="app-wrapper">
-      <TopHat />
+    <div className="app">
+      {/*<TopHat />*/}
 
       <Navigation />
-
-      <Route component={Comp} />
+      <div className="app__content-wrapper">
+        <Route component={Comp} />
+      </div>
 
       <Footer />
     </div>

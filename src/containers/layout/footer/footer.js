@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
+import './footer.scss';
+
 /**
  *
  * @returns {*}

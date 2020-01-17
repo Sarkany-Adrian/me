@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
+import './home.scss';
+
 /**
  *
  * @returns {*}
@@ -10,7 +12,11 @@ const Home = () => {
   /**
    *
    */
-  return <div>home page</div>;
+  return (
+    <div className="home">
+      <div>home page</div>
+    </div>
+  );
 };
 
 export default Home;

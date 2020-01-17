@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {items as NAV_ITEMS} from '../../../constants/navigation-items';
+
+import NavigationItem from '../../../atoms/navigation-item';
 
 import './navigation.scss';
 
@@ -15,22 +17,11 @@ const Navigation = () => {
    */
   return (
     <div className="app-navigation">
-      <div className="app-navigation__left">
-        <ul className="app-navigation__left__list">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="app-navigation__right">right</div>
+      <ul className="app-navigation__list">
+        {NAV_ITEMS.map((item: Object) => (
+          <NavigationItem route={item.path} name={item.name} key={item.name} />
+        ))}
+      </ul>
     </div>
   );
 };
