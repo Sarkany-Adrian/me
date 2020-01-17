@@ -1,5 +1,8 @@
 @import '../../styles/resources';
 
 .header {
-  background: $red;
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 0 24px;
+  background: $white;
 }
