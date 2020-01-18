@@ -1,6 +1,9 @@
 // @flow
 import React from 'react';
-import HeroText from '../../components/hero-text';
+
+import HeroText from '../../atoms/hero-text';
+
+import './home.scss';
 
 /**
  *

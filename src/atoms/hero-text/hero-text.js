@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
+import './hero-text.scss';
+
 /**
  *
  * @returns {*}
@@ -10,7 +12,12 @@ const HeroText = () => {
   /**
    *
    */
-  return <div>hero text</div>;
+  return (
+    <div className="hero-text">
+      <h5>lorem ipsum</h5>
+      <h1>bla bla bla bla </h1>
+    </div>
+  );
 };
 
 export default HeroText;

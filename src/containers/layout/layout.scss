@@ -1,8 +1,10 @@
 @import '../../styles/resources';
 
-.app-wrapper {
-  height: 200px;
-  min-height: 100%;
-  line-height: 24px; // todo: move to constants
+.app {
+  line-height: 24px; // todo: maybe it makes sense to be a constant
   @include fontRoboto;
+
+  &__content-wrapper {
+    min-height: calc(100vh - 150px);
+  }
 }
