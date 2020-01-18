@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
+import './contact.scss';
+
 /**
  *
  * @returns {*}
@@ -10,7 +12,11 @@ const Contact = () => {
   /**
    *
    */
-  return <div>contact page</div>;
+  return (
+    <div className="contact-page">
+      <div>contact page</div>
+    </div>
+  );
 };
 
 export default Contact;
