@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import HeroText from '../../components/hero-text';
 
 /**
  *
@@ -10,7 +11,14 @@ const Home = () => {
   /**
    *
    */
-  return <div>home page</div>;
+
+  return (
+    <div className="home-page">
+      <div>
+        <HeroText />
+      </div>
+    </div>
+  );
 };
 
 export default Home;

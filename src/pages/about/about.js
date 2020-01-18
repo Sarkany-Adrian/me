@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
+import './about.scss';
+
 /**
  *
  * @returns {*}
@@ -10,7 +12,11 @@ const About = () => {
   /**
    *
    */
-  return <div>about page</div>;
+  return (
+    <div className="about-page">
+      <div>about page</div>
+    </div>
+  );
 };
 
 export default About;
