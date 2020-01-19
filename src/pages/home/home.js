@@ -3,7 +3,7 @@ import React from 'react';
 
 import HeroText from '../../components/hero-text';
 import Image from '../../atoms/image';
-// import HeroImage from '../../images/hero.jpg';
+import HeroImage from '../../images/hero.jpg';
 
 import './home.scss';
 
@@ -24,7 +24,7 @@ const Home = () => {
       </div>
       <div className="home-page__right">
         <div className="home-page__right__hero-image">
-          <Image source={'../../images/hero.jpg'} alt="recruiter hero image" />
+          <Image source={HeroImage} alt="recruiter hero image" />
         </div>
       </div>
     </div>

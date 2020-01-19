@@ -30,7 +30,7 @@ describe('input atom: ', () => {
   it('invokes the onChange prop', () => {
     const wrapper = mount(<Input value="foo" onChange={mockOnChange} />);
 
-    wrapper.simulate('change', event);
+    wrapper.find('input').simulate('change', event);
     expect(mockOnChange).toHaveBeenCalled();
 
     wrapper.unmount();
