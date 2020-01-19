@@ -19,7 +19,12 @@ const Navigation = () => {
     <div className="app-navigation">
       <ul className="app-navigation__list">
         {NAV_ITEMS.map((item: Object) => (
-          <NavigationItem route={item.path} name={item.name} key={item.name} />
+          <NavigationItem
+            route={item.path}
+            name={item.name}
+            key={item.name}
+            bordered={item.bordered}
+          />
         ))}
       </ul>
     </div>

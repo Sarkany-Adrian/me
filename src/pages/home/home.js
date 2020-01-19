@@ -17,9 +17,10 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <div>
+      <div className="home-page__left">
         <HeroText />
       </div>
+      <div className="home-page__right">picture here</div>
     </div>
   );
 };

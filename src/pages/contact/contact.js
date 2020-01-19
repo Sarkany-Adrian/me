@@ -3,6 +3,9 @@ import React from 'react';
 
 import './contact.scss';
 
+///
+import Input from '../../atoms/input';
+
 /**
  *
  * @returns {*}
@@ -14,7 +17,9 @@ const Contact = () => {
    */
   return (
     <div className="contact-page">
-      <div>contact page</div>
+      <div>
+        contact page <Input value="test" onChange={() => undefined} />
+      </div>
     </div>
   );
 };

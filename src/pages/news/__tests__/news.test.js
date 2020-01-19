@@ -1,6 +1,6 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import About from '../index';
+import News from '../index';
 
 /**
  *
@@ -10,7 +10,7 @@ describe('about page: ', () => {
    *
    */
   it('renders', () => {
-    const wrapper = mount(<About />);
+    const wrapper = mount(<News />);
 
     expect(wrapper).toHaveLength(1);
 

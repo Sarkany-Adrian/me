@@ -5,8 +5,10 @@ import {BrowserRouter, Switch} from 'react-router-dom';
 
 // pages
 import Home from './pages/home';
-import About from './pages/about';
+import Expertise from './pages/expertise';
 import Contact from './pages/contact';
+import Clients from './pages/clients';
+import News from './pages/news';
 import Error404 from './pages/error-404';
 
 // layout
@@ -21,7 +23,10 @@ if (appContainer) {
       <Switch>
         <Layout exact path="/" component={Home} />
 
-        <Layout path="/about" component={About} />
+        <Layout path="/expertise" component={Expertise} />
+        <Layout path="/clients" component={Clients} />
+        <Layout path="/news" component={News} />
+
         <Layout path="/contact" component={Contact} />
         {/* Error page */}
         <Layout path="/error" component={Error} />

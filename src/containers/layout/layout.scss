@@ -5,6 +5,8 @@
   @include fontRoboto;
 
   &__content-wrapper {
+    max-width: $max-width;
+    margin: 0 auto;
     min-height: calc(100vh - 150px);
   }
 }

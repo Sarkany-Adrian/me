@@ -6,11 +6,20 @@ export const items = [
     path: '/'
   },
   {
-    name: 'contact',
-    path: '/contact'
+    name: 'expertise',
+    path: '/expertise'
   },
   {
-    name: 'about',
-    path: '/about'
+    name: 'clients',
+    path: '/clients'
+  },
+  {
+    name: 'news',
+    path: '/news'
+  },
+  {
+    name: 'contact',
+    path: '/contact',
+    bordered: true
   }
 ];

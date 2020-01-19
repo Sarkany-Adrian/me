@@ -3,6 +3,11 @@
 .home-page {
   min-height: 85vh;
   background: peachpuff;
-  max-width: $max-width;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+
+  &__left,
+  &__right {
+
+  }
 }
