@@ -1,22 +1,22 @@
 // @flow
 import React from 'react';
 
-import './about.scss';
+import './expertise.scss';
 
 /**
  *
  * @returns {*}
  * @constructor
  */
-const About = () => {
+const Expertise = () => {
   /**
    *
    */
   return (
-    <div className="about-page">
+    <div className="expertise-page">
       <div>about page</div>
     </div>
   );
 };
 
-export default About;
+export default Expertise;

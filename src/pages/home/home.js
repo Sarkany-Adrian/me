@@ -1,7 +1,9 @@
 // @flow
 import React from 'react';
 
-import HeroText from '../../atoms/hero-text';
+import HeroText from '../../components/hero-text';
+import Image from '../../atoms/image';
+import HeroImage from '../../images/hero.jpg';
 
 import './home.scss';
 
@@ -17,8 +19,13 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <div>
+      <div className="home-page__left">
         <HeroText />
+      </div>
+      <div className="home-page__right">
+        <div className="home-page__right__hero-image">
+          <Image source={HeroImage} alt="recruiter hero image" />
+        </div>
       </div>
     </div>
   );

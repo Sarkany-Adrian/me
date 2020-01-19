@@ -2,23 +2,23 @@ import React from 'react';
 import {mount} from 'enzyme';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-import Home from '../index';
+import HeroText from '../index';
 
 /**
  *
  */
-describe('home page: ', () => {
+describe('hero text: ', () => {
   /**
    *
    */
   it('renders', () => {
     const wrapper = mount(
       <Router>
-        <Home />
+        <HeroText />
       </Router>
     );
 
-    expect(wrapper.find('Home')).toHaveLength(1);
+    expect(wrapper.find('HeroText')).toHaveLength(1);
 
     wrapper.unmount();
   });

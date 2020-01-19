@@ -3,8 +3,11 @@
 .app {
   line-height: 24px; // todo: maybe it makes sense to be a constant
   @include fontRoboto;
+  background: $siteBackground;
 
   &__content-wrapper {
+    max-width: $max-width;
+    margin: 0 auto;
     min-height: calc(100vh - 150px);
   }
 }

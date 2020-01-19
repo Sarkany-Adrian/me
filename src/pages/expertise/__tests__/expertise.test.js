@@ -1,16 +1,16 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Contact from '../index';
+import Expertise from '../index';
 
 /**
  *
  */
-describe('about page: ', () => {
+describe('expertise page: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<Contact />);
+    const wrapper = mount(<Expertise />);
 
     expect(wrapper).toHaveLength(1);
 

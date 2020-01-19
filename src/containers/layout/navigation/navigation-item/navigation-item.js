@@ -11,20 +11,22 @@ import './navigation-item.scss';
  */
 type TProps = {
   route: string,
-  name: string
+  name: string,
+  bordered: boolean
 };
 
 /**
  *
  * @constructor
  */
-const NavigationItem = ({route, name}: TProps) => {
+const NavigationItem = ({route, name, bordered}: TProps) => {
   const history = useHistory();
 
   return (
     <li
       className={cx('navigation-item', {
-        'active': history.location.pathname === route
+        active: history.location.pathname === route,
+        bordered: bordered
       })}
     >
       <Link to={route}>{name}</Link>

@@ -1,16 +1,16 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Icon from '../index';
+import News from '../index';
 
 /**
  *
  */
-describe('icon atom: ', () => {
+describe('news page: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<Icon />);
+    const wrapper = mount(<News />);
 
     expect(wrapper).toHaveLength(1);
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import HeroText from '../index';
+import Clients from '../index';
 
 /**
  *
  */
-describe('hero text: ', () => {
+describe('clients page: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<HeroText />);
+    const wrapper = mount(<Clients />);
 
     expect(wrapper).toHaveLength(1);
 

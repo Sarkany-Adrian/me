@@ -2,7 +2,27 @@
 
 .home-page {
   min-height: 85vh;
-  background: peachpuff;
-  max-width: $max-width;
-  margin: 0 auto;
+
+  &__left,
+  &__right {
+    width: 50%;
+    display: inline-block;
+
+    @media (max-width: $computerBreakpoint) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    &__hero-image {
+      padding: 10%;
+      margin-top: 5%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
 }

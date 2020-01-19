@@ -1,16 +1,16 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Icon from '../index';
+import Image from '../index';
 
 /**
  *
  */
-describe('icon atom: ', () => {
+describe('image atom: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<Icon />);
+    const wrapper = mount(<Image source={'foo'} alt={'baz'} />);
 
     expect(wrapper).toHaveLength(1);
 

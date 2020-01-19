@@ -3,20 +3,26 @@
 .app-navigation {
   box-sizing: border-box;
   display: flex;
-  margin-top: 40px;
   color: $black;
-  font-size: $normalFontSize;
+  font-size: $desktopFontSize;
   font-weight: $normalFontWeight;
   line-height: 24px;
   padding: 16px;
   flex-direction: row;
   flex-wrap: wrap;
-  border-bottom: 1px solid $light-gray;
 
   &__list {
     list-style-type: none;
     width: 100%;
     text-align: right;
     margin: 0;
+  }
+
+  @media (max-width: $computerBreakpoint) {
+    font-size: $mobileFontSize;
+
+    &__list {
+      text-align: center;
+    }
   }
 }

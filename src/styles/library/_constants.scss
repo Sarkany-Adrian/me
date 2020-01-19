@@ -3,13 +3,24 @@ $black: #202121 !default;
 $white: #ffffff !default;
 $light-gray: #e4e4e4 !default;
 $gray: #64686a !default;
-$red: #f44336 !default;
+$red: #ff2828 !default;
 $green: #49c5b6 !default;
 
 // Fonts
-$normalFontSize: 16px;
+$desktopFontSize: 16px;
+$mobileFontSize: 14px;
+
 $normalFontWeight: 400;
 $lightFontWeight: 300;
+$boldFontWeight: 600;
 
 // Site
 $max-width: 1200px;
+$siteBackground: #fcfcfc !default;
+
+// Breakpoints
+$mobileBreakpoint            : 320px;
+$tabletBreakpoint            : 768px;
+$computerBreakpoint          : 992px;
+$largeMonitorBreakpoint      : 1200px;
+$widescreenMonitorBreakpoint : 1920px;
