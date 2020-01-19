@@ -29,7 +29,8 @@ module.exports = {
     '!jest.config.js',
     '!coverage/*',
     '!coverage/lcov-report/*',
-    '!scripts/*'
+    '!scripts/*',
+    '!src/index.js'
   ],
 
   // An array of directory names to be searched recursively up from the requiring module's location
