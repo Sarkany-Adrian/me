@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './hero-text.scss';
 
@@ -14,8 +15,11 @@ const HeroText = () => {
    */
   return (
     <div className="hero-text">
-      <h5>lorem ipsum</h5>
-      <h1>bla bla bla bla </h1>
+      <h2>
+        Hi! My name is <span className="hero-text__standout">whatever</span>,
+      </h2>
+      <h1>recruiter based in Munich.</h1>
+      <Link to="/contact">contact me</Link>
     </div>
   );
 };

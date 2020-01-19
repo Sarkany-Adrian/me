@@ -2,12 +2,24 @@
 
 .home-page {
   min-height: 85vh;
-  background: peachpuff;
   display: flex;
   flex-direction: row;
 
   &__left,
   &__right {
+    width: 50%;
+  }
 
+  &__right {
+    &__hero-image {
+      padding: 10%;
+      margin-top: 5%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
   }
 }

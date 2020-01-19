@@ -5,7 +5,7 @@ import Contact from '../index';
 /**
  *
  */
-describe('about page: ', () => {
+describe('contact page: ', () => {
   /**
    *
    */

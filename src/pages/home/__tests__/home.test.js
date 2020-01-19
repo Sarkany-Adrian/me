@@ -1,18 +1,24 @@
 import React from 'react';
 import {mount} from 'enzyme';
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import Home from '../index';
 
 /**
  *
  */
-describe('about page: ', () => {
+describe('home page: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<Home />);
+    const wrapper = mount(
+      <Router>
+        <Home />
+      </Router>
+    );
 
-    expect(wrapper).toHaveLength(1);
+    expect(wrapper.find('Home')).toHaveLength(1);
 
     wrapper.unmount();
   });

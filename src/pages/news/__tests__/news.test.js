@@ -5,7 +5,7 @@ import News from '../index';
 /**
  *
  */
-describe('about page: ', () => {
+describe('news page: ', () => {
   /**
    *
    */

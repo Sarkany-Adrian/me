@@ -1,0 +1,49 @@
+@import '../../styles/resources';
+
+.hero-text {
+  box-sizing: border-box;
+  @include fontAlegreya;
+  max-width: 75%;
+  margin-top: 30%;
+  margin-left: 15%;
+  border-right: 1px solid $light-gray;
+  padding: 3%;
+
+  h1,
+  h2 {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: $lightFontWeight;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: $lightFontWeight;
+  }
+
+  a {
+    @include fontRoboto;
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 10px;
+    text-decoration: underline;
+    color: $black;
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__standout {
+    color: $green;
+  }
+}

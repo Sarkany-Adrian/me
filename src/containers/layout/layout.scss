@@ -3,6 +3,7 @@
 .app {
   line-height: 24px; // todo: maybe it makes sense to be a constant
   @include fontRoboto;
+  background: $siteBackground;
 
   &__content-wrapper {
     max-width: $max-width;

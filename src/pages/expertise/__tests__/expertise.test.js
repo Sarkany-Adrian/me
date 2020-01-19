@@ -5,7 +5,7 @@ import Expertise from '../index';
 /**
  *
  */
-describe('about page: ', () => {
+describe('expertise page: ', () => {
   /**
    *
    */
