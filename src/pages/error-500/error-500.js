@@ -6,11 +6,11 @@ import React from 'react';
  * @returns {*}
  * @constructor
  */
-const Logo = () => {
+const Error500 = () => {
   /**
    *
    */
-  return <div>some logo here</div>;
+  return <div>error 500</div>;
 };
 
-export default Logo;
+export default Error500;

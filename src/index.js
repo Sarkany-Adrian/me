@@ -10,6 +10,7 @@ import Contact from './pages/contact';
 import Clients from './pages/clients';
 import News from './pages/news';
 import Error404 from './pages/error-404';
+import Error500 from './pages/error-500';
 
 // layout
 import Layout from './containers/layout';
@@ -22,15 +23,12 @@ if (appContainer) {
     <BrowserRouter>
       <Switch>
         <Layout exact path="/" component={Home} />
-
         <Layout path="/expertise" component={Expertise} />
         <Layout path="/clients" component={Clients} />
         <Layout path="/news" component={News} />
-
         <Layout path="/contact" component={Contact} />
-        {/* Error page */}
-        <Layout path="/error" component={Error} />
-        {/* 404 */}
+        {/* error pages */}
+        <Layout path="/error" component={Error500} />
         <Layout path="*" component={Error404} />
       </Switch>
     </BrowserRouter>,

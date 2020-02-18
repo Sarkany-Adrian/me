@@ -2,14 +2,18 @@ import React from 'react';
 import {mount} from 'enzyme';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-import Layout from '../index';
+import Layout from 'containers/layout';
 
 /**
  *
  */
 describe('layout container: ', () => {
+  // mocks
   const MockComponent = () => <div>foo</div>;
 
+  /**
+   *
+   */
   it('takes a component and renders it', () => {
     const wrapper = mount(
       <Router>

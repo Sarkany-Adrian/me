@@ -1,6 +1,5 @@
 // @flow
-
-export const items = [
+export const items = Object.freeze([
   {
     name: 'home',
     path: '/'
@@ -22,4 +21,4 @@ export const items = [
     path: '/contact',
     bordered: true
   }
-];
+]);

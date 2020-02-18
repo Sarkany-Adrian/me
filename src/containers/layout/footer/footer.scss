@@ -1,6 +1,13 @@
-@import '../../../styles/resources';
+@import 'styles/resources';
 
 .app-footer {
-  color: $black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   height: 40px;
+  margin: 0 20px;
+
+  ul {
+    margin: 0;
+  }
 }

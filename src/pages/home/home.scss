@@ -3,25 +3,22 @@
 .home-page {
   min-height: 85vh;
 
-  &__left,
-  &__right {
-    width: 50%;
-    display: inline-block;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
 
-    @media (max-width: $computerBreakpoint) {
-      width: 100%;
-    }
-  }
+    &__column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background: peachpuff;
+      flex-basis: 50%;
 
-  &__right {
-    &__hero-image {
-      padding: 10%;
-      margin-top: 5%;
-
-      img {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
+      @media screen and (max-width: $computerBreakpoint) {
+        flex-basis: 100%;
       }
     }
   }

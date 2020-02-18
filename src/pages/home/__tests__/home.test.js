@@ -2,7 +2,7 @@ import React from 'react';
 import {mount} from 'enzyme';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-import Home from '../index';
+import Home from 'pages/home';
 
 /**
  *

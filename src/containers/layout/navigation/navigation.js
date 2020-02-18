@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
-import {items as NAV_ITEMS} from '../../../constants/navigation-items';
+import {items as NAV_ITEMS} from 'constants/navigation-items';
 
-import NavigationItem from './navigation-item';
+import NavigationItem from 'containers/layout/navigation/navigation-item';
 
 import './navigation.scss';
 

@@ -3,9 +3,9 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 
 // components
-// import TopHat from './top-hat';
-import Footer from './footer';
-import Navigation from './navigation';
+// import TopHat from 'containers/layout/top-hat';
+import Footer from 'containers/layout/footer';
+import Navigation from 'containers/layout/navigation';
 
 import './layout.scss';
 

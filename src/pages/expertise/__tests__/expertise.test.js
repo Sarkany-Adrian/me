@@ -1,6 +1,7 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Expertise from '../index';
+
+import Expertise from 'pages/expertise';
 
 /**
  *

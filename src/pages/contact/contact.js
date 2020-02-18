@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import Form from '../../components/form';
+import Form from 'components/form';
 
 import './contact.scss';
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Error404 from '../index';
+
+import Error404 from 'pages/error-404';
 
 /**
  *

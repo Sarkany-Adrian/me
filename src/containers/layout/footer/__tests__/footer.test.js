@@ -1,7 +1,7 @@
 import React from 'react';
 import {mount} from 'enzyme';
 
-import Footer from '../index';
+import Footer from 'containers/layout/footer';
 
 /**
  *
