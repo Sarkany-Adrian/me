@@ -20,6 +20,7 @@ type TProps = {
  * @constructor
  */
 const FooterItem = ({item}: TProps) => {
+  console.log('item', item.icon);
   /**
    *
    */
@@ -30,7 +31,7 @@ const FooterItem = ({item}: TProps) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={item.icon} alt={item.name} />
+      <i className={item.icon} />
     </a>
   );
 };

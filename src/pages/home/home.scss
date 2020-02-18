@@ -1,25 +1,41 @@
-@import '../../styles/resources';
+@import 'styles/resources';
 
 .home-page {
   min-height: 85vh;
 
-  &__row {
+  &__content {
     display: flex;
+    box-sizing: border-box;
+    padding: 15% 5%;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     justify-content: flex-start;
 
-    &__column {
+    &__left,
+    &__right {
       display: flex;
       flex-direction: column;
-      flex: 1;
-      background: peachpuff;
-      flex-basis: 50%;
+      box-sizing: border-box;
+      padding: 0 32px;
 
       @media screen and (max-width: $computerBreakpoint) {
         flex-basis: 100%;
       }
+    }
+
+    &__left {
+      width: 40%;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    &__right {
+      width: 60%;
     }
   }
 }

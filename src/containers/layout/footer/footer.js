@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="app-footer">
       <ul>
         {FOOTER_ITEMS.map((item, index) => (
-          <FooterItem key={index} item={item} />
+          <FooterItem key={index} item={item} icon={item.icon} />
         ))}
       </ul>
     </div>

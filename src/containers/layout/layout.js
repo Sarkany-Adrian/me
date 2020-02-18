@@ -26,7 +26,7 @@ const Layout = ({component: Comp}: TProps) => {
    *
    */
   return (
-    <div className="app">
+    <main className="app">
       {/*<TopHat />*/}
 
       <Navigation />
@@ -35,7 +35,7 @@ const Layout = ({component: Comp}: TProps) => {
       </div>
 
       <Footer />
-    </div>
+    </main>
   );
 };
 

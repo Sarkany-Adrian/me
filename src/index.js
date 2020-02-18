@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch} from 'react-router-dom';
+import 'font-awesome/css/font-awesome.min.css';
 
 // pages
 import Home from './pages/home';

@@ -1,28 +1,24 @@
 // @flow
-import facebookIcon from 'assets/icons/facebook.svg';
-import twitterIcon from 'assets/icons/twitter.svg';
-import instagramIcon from 'assets/icons/instagram.svg';
-import linkedinIcon from 'assets/icons/linkedin.svg';
 
 export const items = Object.freeze([
   {
     name: 'linkedin',
     url: '/',
-    icon: linkedinIcon
+    icon: 'fa fa-linkedin-square'
   },
   {
     name: 'facebook',
     url: '/',
-    icon: facebookIcon
+    icon: 'fa fa-facebook-square'
   },
   {
     name: 'instagram',
     url: '/',
-    icon: instagramIcon
+    icon: 'fa fa-instagram'
   },
   {
     name: 'twitter',
     url: '/',
-    icon: twitterIcon
+    icon: 'fa fa-twitter-square'
   }
 ]);
