@@ -1,6 +1,6 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Form from '../index';
+import Form from 'components/form';
 
 /*
  *

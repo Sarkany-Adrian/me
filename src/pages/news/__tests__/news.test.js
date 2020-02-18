@@ -1,6 +1,7 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import News from '../index';
+
+import News from 'pages/news';
 
 /**
  *

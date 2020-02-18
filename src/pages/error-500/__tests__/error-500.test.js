@@ -1,16 +1,17 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Contact from 'pages/contact';
+
+import Error500 from 'pages/error-500';
 
 /**
  *
  */
-describe('contact page: ', () => {
+describe('404 page: ', () => {
   /**
    *
    */
   it('renders', () => {
-    const wrapper = mount(<Contact />);
+    const wrapper = mount(<Error500 />);
 
     expect(wrapper).toHaveLength(1);
 

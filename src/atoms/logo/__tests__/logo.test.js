@@ -1,6 +1,6 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Logo from '../index';
+import Logo from 'atoms/logo';
 
 /**
  *

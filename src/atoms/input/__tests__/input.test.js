@@ -1,6 +1,6 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import Input from '../index';
+import Input from 'atoms/input';
 
 const mockOnChange = jest.fn();
 const event = {

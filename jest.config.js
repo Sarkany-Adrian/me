@@ -38,7 +38,7 @@ module.exports = {
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '\\.(s?css|less|jpg|ico|jpeg|png|gif|)$': '<rootDir>/__mocks__/empty_module.js'
+    '\\.(s?css|less|jpg|ico|jpeg|png|svg|gif|)$': '<rootDir>/__mocks__/empty_module.js'
   },
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped

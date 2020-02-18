@@ -2,7 +2,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Input from '../../atoms/input';
+import Input from 'atoms/input';
 
 /**
  *
