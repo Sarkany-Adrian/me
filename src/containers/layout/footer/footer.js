@@ -17,7 +17,10 @@ const Footer = () => {
    */
   return (
     <div className="app-footer">
-      <ul>
+      <div className="app-footer__terms">
+
+      </div>
+      <ul className="app-footer__social">
         {FOOTER_ITEMS.map((item, index) => (
           <FooterItem key={index} item={item} icon={item.icon} />
         ))}

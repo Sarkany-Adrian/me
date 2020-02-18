@@ -20,7 +20,6 @@ type TProps = {
  * @constructor
  */
 const FooterItem = ({item}: TProps) => {
-  console.log('item', item.icon);
   /**
    *
    */

@@ -6,7 +6,7 @@
   &__content {
     display: flex;
     box-sizing: border-box;
-    padding: 15% 5%;
+    margin-top: 20%;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -36,6 +36,15 @@
 
     &__right {
       width: 60%;
+    }
+
+    @media (max-width: $computerBreakpoint) {
+      &__left,
+      &__right {
+        display: block;
+        width: 100%;
+        padding: 8px;
+      }
     }
   }
 }

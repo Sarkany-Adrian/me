@@ -1,13 +1,15 @@
-@import '../../styles/resources';
+@import 'styles/resources';
 
 .app {
-  line-height: 24px; // todo: maybe it makes sense to be a constant
+  line-height: 24px;
   @include fontRoboto;
   background: $siteBackground;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 
-  &__content-wrapper {
-    max-width: $max-width;
+  &__content {
     margin: 0 auto;
-    min-height: calc(100vh - 150px);
+    display: flex;
   }
 }

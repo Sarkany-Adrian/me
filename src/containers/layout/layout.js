@@ -28,11 +28,11 @@ const Layout = ({component: Comp}: TProps) => {
   return (
     <main className="app">
       {/*<TopHat />*/}
-
       <Navigation />
-      <div className="app__content-wrapper">
+
+      <app className="app__content">
         <Route component={Comp} />
-      </div>
+      </app>
 
       <Footer />
     </main>

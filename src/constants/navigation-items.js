@@ -13,12 +13,7 @@ export const items = Object.freeze([
     path: '/clients'
   },
   {
-    name: 'news',
-    path: '/news'
-  },
-  {
     name: 'contact',
-    path: '/contact',
-    bordered: true
+    path: '/contact'
   }
 ]);

@@ -1,13 +1,17 @@
 @import 'styles/resources';
 
 .app-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 40px;
-  margin: 0 30px;
+  bottom: 0;
+  min-height: 100px;
+  background: peachpuff;
+  box-sizing: border-box;
 
-  ul {
-    margin: 0;
+  &__terms {
+  }
+
+  &__social {
+    ul {
+      margin: 0;
+    }
   }
 }
