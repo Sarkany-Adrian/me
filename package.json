@@ -8,8 +8,11 @@
     "test": "jest",
     "flow": "flow",
     "lint-staged": "lint-staged",
-    "check": "npm-check"
+    "check": "npm-check",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
+  "homepage": "https://Sarkany-Adrian.github.io/di",
   "lint-staged": {
     "*": "npm test -- --findRelatedTests && git add"
   },
@@ -43,6 +46,7 @@
     "flow-typed": "2.6.2",
     "font-awesome": "^4.7.0",
     "fs-extra": "7.0.1",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
     "is-wsl": "^1.1.0",
