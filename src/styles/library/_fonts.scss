@@ -2,6 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@mixin fontAlegreya{
-  font-family: 'Alegreya', sans-serif;
+@mixin fontProzaLibre {
+  font-family: 'Proza Libre', sans-serif;
+}
+
+@mixin fontAvenir {
+  font-family: "Avenir Next", "Avenir", sans-serif; // todo: set this up
 }

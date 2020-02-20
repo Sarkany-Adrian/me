@@ -7,7 +7,7 @@ $red: #ff2828 !default;
 $green: #49c5b6 !default;
 
 // Fonts
-$desktopFontSize: 16px;
+$desktopFontSize: 16px; // todo: split between text and headers
 $mobileFontSize: 14px;
 
 $normalFontWeight: 400;
@@ -15,8 +15,7 @@ $lightFontWeight: 300;
 $boldFontWeight: 600;
 
 // Site
-$max-width: 1200px;
-$siteBackground: #fcfcfc !default;
+$siteBackground: #f4f7f6 !default;
 
 // Breakpoints
 $mobileBreakpoint            : 320px;

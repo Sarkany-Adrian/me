@@ -16,9 +16,9 @@ const HeroText = () => {
   return (
     <div className="hero-text">
       <h2>
-        Hi! My name is <span className="hero-text__standout">bla</span>,
+        Hi! I'm <span className="hero-text__standout">Diana</span>,
       </h2>
-      <h1>recruiter based in Munich.</h1>
+      <h1> technical recruiter based in Munich.</h1>
       <Link to="/contact">contact me</Link>
     </div>
   );
