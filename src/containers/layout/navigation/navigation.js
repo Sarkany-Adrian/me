@@ -20,9 +20,9 @@ const Navigation = () => {
       <div id="menuToggle" className="app-navigation__toggle">
         <input type="checkbox" className="app-navigation__toggle__checkbox" />
 
-        <span></span>
-        <span></span>
-        <span></span>
+        <span />
+        <span />
+        <span />
 
         <ul id="app-menu" className="app-navigation__toggle__list">
           {NAV_ITEMS.map((item: Object) => (
