@@ -21,7 +21,7 @@ const appContainer: HTMLElement | null =
 
 if (appContainer) {
   ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Layout exact path="/" component={Home} />
         <Layout path="/expertise" component={Expertise} />
