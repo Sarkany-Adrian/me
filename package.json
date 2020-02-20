@@ -10,7 +10,7 @@
     "lint-staged": "lint-staged",
     "check": "npm-check",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "homepage": "https://Sarkany-Adrian.github.io/di",
   "lint-staged": {
