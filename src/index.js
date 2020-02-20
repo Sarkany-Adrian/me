@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Switch} from 'react-router-dom';
+import {HashRouter, Switch} from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 
 // pages
@@ -21,7 +21,7 @@ const appContainer: HTMLElement | null =
 
 if (appContainer) {
   ReactDOM.render(
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Layout exact path="/" component={Home} />
         <Layout path="/expertise" component={Expertise} />
@@ -32,7 +32,7 @@ if (appContainer) {
         <Layout path="/error" component={Error500} />
         <Layout path="*" component={Error404} />
       </Switch>
-    </BrowserRouter>,
+    </HashRouter>,
     appContainer
   );
 }
