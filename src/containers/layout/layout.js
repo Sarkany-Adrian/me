@@ -30,9 +30,9 @@ const Layout = ({component: Comp}: TProps) => {
       {/*<TopHat />*/}
       <Navigation />
 
-      <app className="app__content">
+      <div className="app__content">
         <Route component={Comp} />
-      </app>
+      </div>
 
       <Footer />
     </main>
