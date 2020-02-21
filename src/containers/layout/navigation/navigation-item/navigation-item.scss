@@ -15,17 +15,18 @@
 
   a {
     text-decoration: none;
-    color: $black;
+    color: $isabelineGreen;
   }
 
   &::after {
     content: '';
     display: block;
     width: 100%;
-    height: 2px;
+    height: 0.1rem;
+    border-radius: 2px;
     bottom: 0;
     left: 0;
-    background-color: $green;
+    background-color: $weldonBlue;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;

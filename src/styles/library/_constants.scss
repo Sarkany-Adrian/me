@@ -5,6 +5,13 @@ $light-gray: #e4e4e4 !default;
 $gray: #64686a !default;
 $red: #ff2828 !default;
 $green: #49c5b6 !default;
+$darkJungle: #1c2321 !default;
+$weldonBlue: #7d98a1 !default;
+$cadetGrey: #5e6572 !default;
+$isabelineGreen: #EEF1EF !default;
+$wildBlueYonder: #a9B4c2 !default;
+$bottleGreen: #0b6e4f !default;
+$pantoneGreen: #08A045 !default;
 
 // Fonts
 $desktopFontSize: 16px; // todo: split between text and headers
@@ -15,7 +22,8 @@ $lightFontWeight: 300;
 $boldFontWeight: 600;
 
 // Site
-$siteBackground: #f4f7f6 !default;
+$siteBackground: $isabelineGreen !default;
+$contentMaxWidth: 1200px;
 
 // Breakpoints
 $mobileBreakpoint            : 320px;
