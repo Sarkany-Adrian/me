@@ -18,8 +18,9 @@ const HeroText = () => {
       <h2>
         Hi! I'm <span className="hero-text__standout">Diana</span>,
       </h2>
-      <h1> technical recruiter based in Munich.</h1>
-      <Link to="/contact">contact me</Link>
+      <h1> I am passionate about technical recruitment.</h1>
+      <h2> Based in Munich.</h2>
+      {/*<Link to="/contact">contact me</Link>*/}
     </div>
   );
 };

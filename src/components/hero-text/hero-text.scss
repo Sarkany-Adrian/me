@@ -6,48 +6,50 @@
   justify-content: center;
   @include fontProzaLibre;
   margin-top: 6%;
-  max-width: 80%;
-  height: 100%;
 
   h1,
   h2 {
     margin: 0;
+    color: $darkJungle;
   }
 
   h2 {
-    font-size: 40px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 30px;
     font-weight: $lightFontWeight;
+    letter-spacing: 0.7px;
   }
 
   h1 {
-    font-size: 48px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
     font-weight: $lightFontWeight;
+    margin: 16px 0;
+    color: $bottleGreen;
   }
 
   a {
     @include fontRoboto;
-    position: absolute;
     bottom: 0;
     right: 0;
-    margin-top: 5%;
+    margin-top: 10%;
     text-transform: uppercase;
     font-size: 12px;
-    line-height: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
     text-decoration: underline;
-    color: $black;
+    color: $cadetGrey;
     text-align: right;
     width: 100%;
     display: inline-block;
 
     &:hover {
-      color: $green;
+      color: $pantoneGreen;
     }
   }
 
   &__standout {
-    color: $green;
+    color: $bottleGreen;
   }
 
   @media (max-width: $computerBreakpoint) {

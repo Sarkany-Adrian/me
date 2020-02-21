@@ -1,0 +1,12 @@
+@import 'styles/resources';
+
+.home-page-bio {
+  width: 80%;
+  margin: 0 auto;
+  @include fontAvenir;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 16% 16% 0 16%;
+}

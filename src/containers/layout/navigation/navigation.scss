@@ -17,35 +17,32 @@
       position: absolute;
       top: -7px;
       left: -5px;
-
       cursor: pointer;
-
       opacity: 0; /* hide this */
       z-index: 2; /* and place it over the hamburger */
-
       -webkit-touch-callout: none;
 
-      &:checked ~ span {
+      &.open ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
-        background: #232323;
+        background: $isabelineGreen;
       }
 
-      &:checked ~ span:nth-last-child(3) {
+      &.open ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
       }
 
-      &:checked ~ span:nth-last-child(3) {
+      &.open ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
       }
 
-      &:checked ~ span:nth-last-child(2) {
+      &.open ~ span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
       }
 
-      &:checked ~ ul {
+      &.open ~ ul {
         transform: none;
       }
     }
@@ -53,12 +50,11 @@
     span {
       display: block;
       width: 33px;
-      height: 4px;
+      height: 3px;
       margin-bottom: 5px;
       position: relative;
-
-      background: #cdcdcd;
-      border-radius: 3px;
+      background: $darkJungle;
+      border-radius: 4px;
 
       z-index: 1;
 
@@ -77,13 +73,12 @@
     }
 
     &__list {
-      //position: absolute;
+      opacity: 0.85;
       width: 100%;
-      //height: 100vh;
       margin: -100px 0 0 -50px;
-      background: #ededed;
+      background: $darkJungle;
       list-style-type: none;
-      padding: 20% 0 0 0;
+      padding: 16% 0 0 0;
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
 
@@ -91,8 +86,8 @@
       transform: translate(-100%, 0);
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
       overflow: hidden;
-      position:fixed;
-      height:100%;
+      position: fixed;
+      height: 100%;
 
       @media (max-width: $computerBreakpoint) {
         padding-top: 30%;
