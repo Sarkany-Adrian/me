@@ -6,6 +6,10 @@
   font-family: 'Proza Libre', sans-serif;
 }
 
-@mixin fontAvenir {
-  font-family: "Avenir Next", "Avenir", sans-serif; // todo: set this up
+@mixin fontRobotoMono {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+@mixin fontMontserrat {
+  font-family: "Montserrat", sans-serif;
 }

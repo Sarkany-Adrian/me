@@ -5,12 +5,8 @@ export const items = Object.freeze([
     path: '/'
   },
   {
-    name: 'expertise',
-    path: '/expertise'
-  },
-  {
-    name: 'clients',
-    path: '/clients'
+    name: 'about',
+    path: '/about'
   },
   {
     name: 'contact',

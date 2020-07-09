@@ -1,0 +1,22 @@
+@import 'styles/resources';
+
+.navigation-item {
+  padding: 40px 20px;
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+    @include fontMontserrat;
+    letter-spacing: 1px;
+    color: $black;
+    font-weight: $normalFontWeight;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &-active {
+    color: red;
+  }
+}

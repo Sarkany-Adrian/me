@@ -1,51 +1,17 @@
 @import 'styles/resources';
 
 .home-page {
+  margin: 0 auto;
+  padding-top: 32px;
+  max-width: 940px; // TODO: move to constants and standardize
+
   &__content {
-    &__top {
-      display: flex;
-      box-sizing: border-box;
-      margin-top: 18%;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: flex-start;
-
-      &__left,
-      &__right {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding: 0 32px;
-
-        @media screen and (max-width: $computerBreakpoint) {
-          flex-basis: 100%;
-        }
-      }
-
-      &__left {
-        width: 40%;
-
-        img {
-          width: 100%;
-          height: auto;
-          display: block;
-        }
-      }
-
-      &__right {
-        padding-top: 10%;
-        width: 60%;
-      }
-
-      @media (max-width: $computerBreakpoint) {
-        &__left,
-        &__right {
-          display: block;
-          width: 100%;
-          padding: 8px;
-        }
-      }
+    &__hero-text {
+      font-size: 7em;
+      line-height: 120%;
+      @include fontRoboto;
+      max-width: 1000px;
+      margin: 0 auto;
     }
   }
 }

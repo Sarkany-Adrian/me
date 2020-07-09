@@ -1,38 +1,48 @@
 // @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 
 // pages
-import Home from './pages/home';
-import Expertise from './pages/expertise';
+import Home from 'pages/home';
 import Contact from './pages/contact';
-import Clients from './pages/clients';
-import News from './pages/news';
+import About from './pages/about';
 import Error404 from './pages/error-404';
 import Error500 from './pages/error-500';
 
 // layout
-import Layout from './containers/layout';
+import Layout from 'layout';
 
 const appContainer: HTMLElement | null =
   document && document.getElementById('root');
 
+/**
+ *
+ */
 if (appContainer) {
   ReactDOM.render(
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      <Switch>
-        <Layout exact path="/" component={Home} />
-        <Layout path="/expertise" component={Expertise} />
-        <Layout path="/clients" component={Clients} />
-        <Layout path="/news" component={News} />
-        <Layout path="/contact" component={Contact} />
-        {/* error pages */}
-        <Layout path="/error" component={Error500} />
-        <Layout path="*" component={Error404} />
-      </Switch>
-    </HashRouter>,
+    <Router>
+      <Layout>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/error">
+            <Error500 />
+          </Route>
+          <Route path="*">
+            <Error404 />
+          </Route>
+        </Switch>
+      </Layout>
+    </Router>,
     appContainer
   );
 }
