@@ -1,0 +1,46 @@
+@import 'styles/resources';
+
+.not-found-page {
+  &__title {
+    font-size: 112px;
+    color: $black;
+    @include fontRoboto;
+  }
+
+  &__subtitle {
+    font-size: 80px;
+    color: $black;
+    @include fontRoboto;
+  }
+
+  &__redirect {
+    cursor: pointer;
+    display: block;
+    margin: 48px 0 0 24px;
+    @include fontRoboto;
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+
+    &::selection {
+      color: $white;
+      background: $black;
+    }
+  }
+
+  @media only screen and (max-width: $tabletBreakpoint) {
+    &__redirect {
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
