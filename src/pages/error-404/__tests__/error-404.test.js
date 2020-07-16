@@ -22,4 +22,20 @@ describe('404 page: ', () => {
 
     wrapper.unmount();
   });
+
+  /**
+   *
+   */
+  it('renders title', () => {
+    const wrapper = mount(
+      <Router>
+        <Error404 />
+      </Router>
+    );
+
+    const title = wrapper.find('.not-found-page__title');
+    expect(title).toHaveLength(1);
+
+    wrapper.unmount();
+  });
 });

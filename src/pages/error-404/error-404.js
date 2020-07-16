@@ -15,8 +15,7 @@ const Error404 = () => {
    */
   return (
     <div className="not-found-page">
-      <h1 className="not-found-page__title">404</h1>
-      <h2 className="not-found-page__subtitle">oh no! page not found</h2>
+      <h1 className="not-found-page__title">page not found</h1>
       <Link to="/" className="not-found-page__redirect">
         go home
       </Link>

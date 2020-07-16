@@ -5,12 +5,12 @@
     font-size: 112px;
     color: $black;
     @include fontRoboto;
-  }
+    margin: 10% 0 10% 24px;
 
-  &__subtitle {
-    font-size: 80px;
-    color: $black;
-    @include fontRoboto;
+    &::selection {
+      color: $white;
+      background: $black;
+    }
   }
 
   &__redirect {
@@ -27,20 +27,11 @@
     }
   }
 
-  &__title,
-  &__subtitle {
-    text-align: center;
-
-    &::selection {
-      color: $white;
-      background: $black;
-    }
-  }
-
   @media only screen and (max-width: $tabletBreakpoint) {
+    &__title,
     &__redirect {
       text-align: center;
-      margin: 0;
+      margin: 10% 0 64px 0;
     }
   }
 }

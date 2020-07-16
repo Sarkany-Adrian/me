@@ -7,7 +7,7 @@ import Error500 from 'pages/error-500';
 /**
  *
  */
-describe('404 page: ', () => {
+describe('500 page: ', () => {
   /**
    *
    */
@@ -19,6 +19,22 @@ describe('404 page: ', () => {
     );
 
     expect(wrapper).toHaveLength(1);
+
+    wrapper.unmount();
+  });
+
+  /**
+   *
+   */
+  it('renders title', () => {
+    const wrapper = mount(
+      <Router>
+        <Error500 />
+      </Router>
+    );
+
+    const title = wrapper.find('.error-page__title');
+    expect(title).toHaveLength(1);
 
     wrapper.unmount();
   });
